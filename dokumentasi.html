@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/output.css">
+  <title>HUMTIK | Humas TIK</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="icon" type="png" sizes="32x32" href="public/images/LOGO HUMTIK KREM.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+  #bg{
+    background-image: url(public/images/bg.png);
+  }
+.p {
+  width: 12rem; /* mobile */
+}
+
+@media (min-width: 768px) {
+  .p {
+    width: 20rem; /* desktop */
+  }
+}
+
+</style>
+
+<body class="bg-[#332B2A] overflow-x-hidden text-white">
+
+<!-- Navbar -->
+<header id="navbar" class="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-300">
+  <div class="container mx-auto px-4">
+    <!-- Nav Row -->
+    <div class="relative flex items-center justify-between h-20 lg:px-20">
+      <!-- Logo -->
+      <a href="#beranda" class="flex items-center gap-3 max-w-[80%]">
+        <img src="public/images/LOGO HUMTIK KREM.png" alt="Logo" class="h-10 w-auto shrink-0">
+        <div class="flex flex-col leading-tight">
+          <span class="text-[#e6d2b9] font-bold text-lg tracking-wide">
+            HUMTIK
+          </span>
+          <span class="text-[#dac1a2] text-xs lg:whitespace-nowrap">
+            Humas Teknologi Informasi dan Komunikasi (2025/2026)
+          </span>
+        </div>
+      </a>
+      <!-- Hamburger -->
+      <button
+        id="hamburger"
+        class="flex flex-col justify-center gap-2
+               h-10 w-10 items-center
+               ml-3 lg:hidden">
+        <span class="block w-7 h-0.5 bg-[#e6d2b9]"></span>
+        <span class="block w-7 h-0.5 bg-[#e6d2b9]"></span>
+        <span class="block w-7 h-0.5 bg-[#e6d2b9]"></span>
+      </button>
+      <!-- Nav Menu -->
+      <nav
+        id="nav-menu"
+        class="hidden absolute left-0 right-0 top-full
+               bg-[#332B2A] shadow-lg
+               lg:static lg:block lg:bg-transparent
+               lg:shadow-none lg:ml-auto">
+        <ul class="flex flex-col px-6 py-4 gap-4
+                   lg:flex-row lg:p-0 lg:gap-x-10">
+          <li>
+            <a href="index.html"
+              class="relative block py-2 text-white
+                     transition-colors duration-300 hover:text-[#e6d2b9]
+                     lg:after:content-[''] lg:after:absolute lg:after:left-0 lg:after:-bottom-1
+                     lg:after:h-0.5 lg:after:w-0 lg:after:bg-[#e6d2b9]
+                     lg:after:transition-all lg:after:duration-300 lg:hover:after:w-full">
+              Beranda
+            </a>
+          </li>
+          <li>
+            <a href="anggota.html"
+              class="relative block py-2 text-white
+                     transition-colors duration-300 hover:text-[#e6d2b9]
+                     lg:after:content-[''] lg:after:absolute lg:after:left-0 lg:after:-bottom-1
+                     lg:after:h-0.5 lg:after:w-0 lg:after:bg-[#e6d2b9]
+                     lg:after:transition-all lg:after:duration-300 lg:hover:after:w-full">
+              Anggota
+            </a>
+          </li>
+          <li>
+            <a href="dokumentasi.html"
+              class="relative block py-2 text-white
+                     transition-colors duration-300 hover:text-[#e6d2b9]
+                     lg:after:content-[''] lg:after:absolute lg:after:left-0 lg:after:-bottom-1
+                     lg:after:h-0.5 lg:after:w-0 lg:after:bg-[#e6d2b9]
+                     lg:after:transition-all lg:after:duration-300 lg:hover:after:w-full">
+              Hasil Dokumentasi
+            </a>
+          </li>
+          <li>
+            <a href="ekstra.html"
+              class="relative block py-2 text-white
+                     transition-colors duration-300 hover:text-[#e6d2b9]
+                     lg:after:content-[''] lg:after:absolute lg:after:left-0 lg:after:-bottom-1
+                     lg:after:h-0.5 lg:after:w-0 lg:after:bg-[#e6d2b9]
+                     lg:after:transition-all lg:after:duration-300 lg:hover:after:w-full">
+              Ekstrakurikuler
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Isi -->
+<section class="relative py-24 px-6 bg-linear-to-b from-[#5a504f] to-[#39302F] text-white">
+    <div class="text-center mb-5">
+    <h1 class="text-4xl md:text-5xl font-bold text-white">
+      Hasil Dokumentasi
+    </h1>
+    <p class="mt-4 text-gray-300 max-w-4xl mx-auto">
+      Berikut hasil dokumentasi kegiatan yang dapat diakses melalui link Google Drive dibawah ini
+    </p>
+  </div>
+
+  <div class="flex justify-center text-[#e6d2b9]">
+    <a href="https://drive.google.com/drive/folders/1Dh_89tk92wQ_dl--9eBL018NYwdAt-3M?usp=sharing"><img class="p" src="public/images/hasilDokum.png" alt=""></a>
+  </div>
+</section>
+ 
+
+<!-- Footer -->
+ <footer class="relative bg-transparent text-gray-300 overflow-hidden">
+  <!-- background diagonal -->
+<div class="absolute inset-0 bg-[url('public/images/back.png')] bg-cover bg-center pointer-events-none"></div>
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-12 py-16">
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-3 mb-5">
+          <div> <img src="public/images/LOGO HUMTIK KREM.png" width="40rem" alt="">
+          </div>
+          <h3 class="text-xl font-bold text-[#e6d2b9]">HUMTIK</h3>
+        </div>
+        <p class="text-sm leading-relaxed text-white">
+          Sekbid Humas TIK adalah seksi bidang yang bergerak dalam mengelola pembagian informasi dalam maupun luar sekolah serta mengurus segala perihal perantara informasi (media) di SMK N 2 Depok Sleman
+        </p>
+      </div>
+      <!-- Tautan Cepat -->
+      <div>
+  <h4 class="text-lg font-semibold text-[#e6d2b9] mb-5">
+    Tautan Cepat
+  </h4>
+  <ul class="space-y-3 text-sm">
+    <li>
+      <a
+        href="anggota.html"
+        class="inline-block transition-all duration-300 hover:text-[#e6d2b9] hover:scale-105"
+      >
+        Anggota
+      </a>
+    </li>
+    <li>
+      <a
+        href="dokumentasi.html"
+        class="inline-block transition-all duration-300 hover:text-[#e6d2b9] hover:scale-105"
+      >
+        Hasil Dokumentasi
+      </a>
+    </li>
+    <li>
+      <a
+        href="ekstra.html"
+        class="inline-block transition-all duration-300 hover:text-[#e6d2b9] hover:scale-105"
+      >
+        Ekstrakurikuler
+      </a>
+    </li>
+  </ul>
+</div>
+
+      <!-- CP -->
+<div>
+  <h4 class="text-lg font-semibold text-[#e6d2b9] mb-5">
+    Hubungi Kami
+  </h4>
+  <ul class="space-y-4 text-sm">
+    <!-- WhatsApp -->
+    <li>
+      <a
+        href="https://wa.me/6285229568202"
+        class="group flex items-center gap-3 text-white transition-all duration-300 hover:text-[#e6d2b9] hover:scale-105"
+      >
+        <svg
+          viewBox="0 0 512 512"
+          class="text-[#e6d2b9] transition-transform duration-300 group-hover:scale-110"
+          height="1em"
+          width="1em"
+          fill="currentColor"
+        >
+          <path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/>
+        </svg>
+        <span>+62 852-2956-8202 (Alliyah)</span>
+      </a>
+    </li>
+    <!-- Email -->
+    <li>
+      <a
+        href="mailto:humtik@stembayo.sch.id"
+        class="group flex items-center gap-3 text-white transition-all duration-300 hover:text-[#e6d2b9] hover:scale-105"
+      >
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-[#e6d2b9] group-hover:scale-110 transition-transform duration-300" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+        <span>humtik@stembayo.sch.id</span>
+      </a>
+    </li>
+    <!-- Alamat -->
+    <li>
+      <a
+        href="https://www.google.com/maps?q=SMKN+2+Depok+Sleman"
+        class="group flex items-start gap-3 text-white transition-all duration-300 hover:text-[#e6d2b9] hover:scale-105"
+      >
+        <svg
+          viewBox="0 0 384 512"
+          class="text-[#e6d2b9] mt-1 transition-transform duration-300 group-hover:scale-110"
+          height="1em"
+          width="1em"
+          fill="currentColor"
+        >
+          <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/>
+        </svg>
+        <span>
+          Mrican, Caturtunggal, Depok, Sleman, Yogyakarta 55281
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+      <!-- Follow Us -->
+      <div>
+        <h4 class="text-lg font-semibold text-[#e6d2b9] mb-5">
+          Ikuti Kami
+        </h4>
+        <a href="https://www.instagram.com/humtik.stembayo?igsh=cHpkOXN3NzNzenQ2"
+          class="inline-flex items-center justify-center
+                 w-12 h-12 rounded-full
+                 border border-[#e6d2b9]
+                 text-[#e6d2b9]
+                 hover:bg-[#e6d2b9] hover:text-black
+                 transition">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" 
+          xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 
+          319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 
+          74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 
+          27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 
+          58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 
+          67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 
+          11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 
+          9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 
+          29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-700 mt-14 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white">
+      <p>
+        © 2025 Humas Teknologi Informasi dan Komunikasi SMKN 2 Depok. All rights reserved.
+      </p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-[#e6d2b9] transition">
+          Kebijakan Privasi
+        </a>
+        <a href="#" class="hover:text-[#e6d2b9] transition">
+          Syarat & Ketentuan
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back To Top -->
+  <a href="#"
+     class="fixed bottom-6 right-6 z-9999
+            w-12 h-12 rounded-full
+            bg-[#e6d2b9] text-neutral-950
+            flex items-center justify-center
+            shadow-lg hover:scale-110 transition">
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="w-6 h-6" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
+  </a>
+
+</footer>
+
+
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
